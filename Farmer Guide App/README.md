@@ -133,7 +133,7 @@ Farmer-Guide-App/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/iamankit265/ML-Projects/Farmer-Guide-App.git
+git clone https://github.com/iamankit265/ML-Projects/
 
 ```
 
