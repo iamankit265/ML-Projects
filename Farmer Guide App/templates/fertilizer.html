@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+
+    <link rel="stylesheet" href="../static/fertilizer_style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧪 Fertilizer Recommendation</h1>
+
+    <p class="subtitle">
+        Enter the soil and crop details to get the best fertilizer recommendation.
+    </p>
+
+    <form action="/fertilizer_predict" method="POST">
+
+        <table>
+
+            <tr>
+                <td><label>Temperature</label></td>
+                <td><input type="number" name="Temperature" step="any" placeholder="Enter Temperature Amount" required ></td>
+            </tr>
+
+            <tr>
+                <td><label>Moisture</label></td>
+                <td><input type="number" name="Moisture" step="any" placeholder="Enter Moisture Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Rainfall</label></td>
+                <td><input type="number" name="Rainfall" step="any" placeholder="Enter Rainfall Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>pH</label></td>
+                <td><input type="number" name="PH" step="any" placeholder="Enter ph value" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Nitrogen</label></td>
+                <td><input type="number" name="Nitrogen" step="any" placeholder="Enter Nitrogen Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Phosphorous</label></td>
+                <td><input type="number" name="Phosphorous" step="any" placeholder="Enter Phosphorous Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Potassium</label></td>
+                <td><input type="number" name="Potassium" step="any" placeholder="Enter Potassium Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Carbon</label></td>
+                <td><input type="number" name="Carbon" step="any" placeholder="Enter Carbon Amount" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Soil Type</label></td>
+                <td>
+                    <select name="Soil" required>
+                        <option value="">Select Soil</option>
+                        <option>Black</option>
+                        <option>Clayey</option>
+                        <option>Loamy</option>
+                        <option>Red</option>
+                        <option>Sandy</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Crop Type</label></td>
+                <td>
+                    <input type="text" id="Crop" name="Crop" list="cropList" placeholder="Enter Crop type" required>
+                    <datalist id="cropList">
+                        <option value="rice">
+                        <option value="wheat">
+                        <option value="Mung Bean">
+                        <option value="Tea">
+                        <option value="millet">
+                        <option value="maize">
+                        <option value="Lentil">
+                        <option value="Jute">
+                        <option value="Coffee">
+                        <option value="Cotton">
+                        <option value="Ground Nut">
+                        <option value="Peas">
+                        <option value="Rubber">
+                        <option value="Sugarcane">
+                        <option value="Tobacco">
+                        <option value="Kidney Beans">
+                        <option value="Moth Beans">
+                        <option value="Coconut">
+                        <option value="Black gram">
+                        <option value="Adzuki Beans">
+                        <option value="Pigeon Peas">
+                        <option value="Chickpea">
+                        <option value="banana">
+                        <option value="grapes">
+                        <option value="apple">
+                        <option value="mango">
+                        <option value="muskmelon">
+                        <option value="orange">
+                        <option value="papaya">
+                        <option value="pomegranate">
+                        <option value="watermelon">
+                    </datalist>
+                </td>
+            </tr>
+
+        </table>
+
+        <button type="submit">Recommend Fertilizer</button>
+
+    </form>
+
+
+</div>
+
+</body>
+</html>
