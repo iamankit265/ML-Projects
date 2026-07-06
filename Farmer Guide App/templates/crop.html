@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crop Prediction</title>
+        <link rel="stylesheet" href="../static/crop_style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>🌱 Crop Recommendation</h1>
+
+            <p class="subtitle">
+                Enter the soil and weather parameters to predict the most suitable crop.
+            </p>
+
+            <form action="/crop_predict" method="post">
+
+                <table border="">
+                        <tr>
+                            <td>
+                                <label for="Nitrogen">Nitrogen</label>
+                            </td>
+                            <td>
+                                <input type="number" name="N" id="Nitrogen" step="any" placeholder=" Enter Nitrogen Amount" required>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <label for="Phosphorus">Phosphorus</label>
+                            </td>
+                            <td>
+                                <input type="number" name="P" id="Phosphorus" step="any" placeholder=" Enter Phosphorus Amount" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Potassium">Potassium</label>
+                            </td>
+                            <td>
+                                <input type="number" name="K" id="Potassium" step="any" placeholder=" Enter Potassium Amount" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Temperature">Temperature</label>
+                            </td>
+                            <td>
+                                <input type="number" name="temperature" step="any" id="Temperature" placeholder="Enter Temperature Amount" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="humidity">Humidity</label>
+                            </td>
+                            <td>
+                                <input type="number" name="humidity" step="any" id="humidity" placeholder="Enter Humidity Amount" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ph">ph </label>
+                            </td>
+                            <td>
+                                <input type="number" name="ph" step="any" id="ph" placeholder="Enter ph value" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rainfall">Rainfall</label>
+                            </td>
+                            <td>
+                                <input type="number" name="rainfall" step="any" id="rainfall" placeholder="Enter Rainfall Amount" required>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                <button type="submit">Predict Crop</button>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
+
+
+
+

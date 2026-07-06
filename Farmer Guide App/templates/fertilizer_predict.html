@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+
+    <link rel="stylesheet" href="../static/fertilizer_predict_style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧪 Fertilizer Recommendation</h1>
+
+    <p class="text">
+        Based on the soil properties and crop details, the recommended fertilizer is:
+    </p>
+
+    <div class="result">
+        {{ prediction }}
+    </div>
+
+    <div class="buttons">
+
+        <a href="../templates/fertilizer.html">
+            <button>Predict Again</button>
+        </a>
+
+        <a href="../templates/index.html">
+            <button>Home</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

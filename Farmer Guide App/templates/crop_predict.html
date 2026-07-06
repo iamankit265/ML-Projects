@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="../static/crop_predict_style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌱 Crop Recommendation</h1>
+
+        <p class="text">
+            Based on the provided soil and weather conditions,
+            the most suitable crop is:
+        </p>
+
+        <div class="result">
+            {{ result }}
+        </div>
+
+        <div class="buttons">
+
+            <a href="crop">
+                <button>Predict Again</button>
+            </a>
+
+            <a href="index">
+                <button>Home</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
